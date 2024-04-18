@@ -7,17 +7,10 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            //Chamando as funções dentro do método Main
-            // Soma();
-            // Substracao();
-            // Divisao();
-            // Multiplicacao();
-
-            // Ao invés de chamar as funções podemos chamar apenas o menu
+            
             Menu();
 
         }
-        // função menu
         static void Menu()
         {
             Console.Clear();
@@ -50,7 +43,6 @@ namespace Calculator
 
         }
 
-        //Método Soma, criada fora do método 'Main'
         static void Soma()
         {
             // Limpar o console
@@ -58,7 +50,6 @@ namespace Calculator
             // Mostramos na tela pro usuario inserir um valor
             Console.WriteLine("Primeiro valor: ");
             // Recebemos um valor na tela do usuario e armazenamos em uma variavel
-            // Console.readline le a linha e espera o user apertar enter
             // o console retorna uma string, então temos que converter com float.parse
             float v1 = float.Parse(Console.ReadLine());
 
@@ -67,7 +58,6 @@ namespace Calculator
             Console.WriteLine("");
 
             float resultado = v1 + v2;
-            // Console.WriteLine("O resultado da soma é: " + resultado);
             // exemplo de interpolação de strings com '$'
             Console.WriteLine($"O resultado da soma é {resultado}");
             // ReadKey é Para não parar a execução
@@ -75,8 +65,6 @@ namespace Calculator
             // Depois do enter ele retornará para o menu
             // abaixo é um exemplo que podemos chamar uma função dentro de uma função.
             Menu();
-
-
 
         }
 
